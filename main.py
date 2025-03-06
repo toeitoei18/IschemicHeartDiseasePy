@@ -12,9 +12,9 @@ from sklearn.ensemble import RandomForestClassifier
 mydata = pd.read_csv(r'C:\Users\Toei\Desktop\IschemicHeartDiseasePy\IschemicHeartDisease.csv')
 
 x = mydata[['ChestTightness','ChestPain','Smart','HeartPalpitations','Squeamish','Faint','Gasp','Tired','Choking','EpigastricCongestion']]
-y = mydata['Ischemicheart']
+y = mydata['IschemicHeart']
 
-x_train, x_test, y_traain, y_test = train_test_split(x,y, test_size=0.2, random_state=1)
+x_train, x_test, y_train, y_test = train_test_split(x,y, test_size=0.2, random_state=1)
 
 modelRF = RandomForestClassifier(n_estimators=100, random_state=42, max_depth=5)
 modelRF.fit(x_train, y_train)
