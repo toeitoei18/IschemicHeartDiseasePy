@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {font-family:Arial, Helvetica, sans-serif;}
+        * {box-sizing:border-box;}
+        input[type=text], select, textarea {
+            width: 100;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing:border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        input[type=submit]{
+            background-color: #aa048c;
+            color: #ffc0cb;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background-color: #aa0420;
+        }
+        .container{
+            border-radius: 5px;
+            background-color: #ffc0cb;
+            padding: 20px;
+        }
+    </style>
+    </head>
+    <body style="background-color: #ffc0cb;">
+        <h3>การจำแนกโรคหัวใจขาดเลือด</h3>
+        <form action="http//localhost:5000", method="POST">
+            <p>
+                <body>
+                แน่นหน้าอก: <input type='text' name='ChestTightness'><br>
+                เจ็บหน้าอก: <input type='text' name='ChestPain'><br> 
+                ปวดร้าว: <input type='text' name='Smart'><br> 
+                ใจสั่น: <input type='text' name='HeartPalpitations'><br> 
+                คลื่นไส้: <input type='text' name='Squeamish'><br> 
+                เป็นลม: <input type='text' name='Faint'><br> 
+                หอบ : <input type='text' name='Gasp'><br> 
+                เหนื่อย : <input type='text' name='Tired'><br> 
+                จุกคอหอย: <input type='text' name='Choking'><br> 
+                จุกลิ้นปี่: <input type='text' name='EpigastricCongestion'><br>   
+                จำแนกเป็น: {{result}} <br>
+                <input type="submit" value="Predict">
+
+                </body>
+            </p>
+        </form>
+    </body>
+    <body style="background-color: #ffc0cb;">
+        <h3>การจำแนกโรคหัวใจขาดเลือด</h3>
+        <form action="http//localhost:5000", method="POST"></form>
+    </body>
+</html>
